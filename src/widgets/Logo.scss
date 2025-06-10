@@ -1,0 +1,23 @@
+@use '../assets/scss/colors.scss' as colors;
+
+.logo {
+    &__link {
+        display: block;
+    }
+
+    &__image {
+        width: auto;
+        height: 2.5rem;
+
+        display: block;
+
+        transition: all 0.1s ease-in-out;
+
+        &:focus,
+        &:hover {
+            fill: color-mix(in srgb, colors.$blue-color, #000 20%);
+
+            transform: scale(1.05);
+        }
+    }
+}

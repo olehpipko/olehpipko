@@ -1,0 +1,20 @@
+@use '../assets/scss/colors.scss' as colors;
+@use '../assets/scss/_container.scss';
+
+.education {
+    &__container {
+        @extend %container;
+    }
+
+    &__title {
+        font-size: 2rem;
+        line-height: 1em;
+
+        text-align: center;
+
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+            text-align-last: left;
+        }
+    }
+}
