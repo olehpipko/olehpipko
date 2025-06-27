@@ -1,0 +1,39 @@
+{
+    "photo": "/img/photo-540x540.jpg",
+    "fullname": "Oleh Pipko",
+    "position": "a Full-Stack Wordpress Developer in Kyiv",
+    "contacts": [
+        {
+            "title": "Mail",
+            "name": "mail",
+            "value": "oleh.pipko@gmail.com",
+            "href": "mailto:oleh.pipko@gmail.com",
+            "target": ""
+        },
+        {
+            "title": "Phone",
+            "name": "phone",
+            "value": "+38 (050) 593-04-03",
+            "href": "tel:+380505930403",
+            "target": ""
+        },
+        {
+            "title": "Linkedin",
+            "name": "linkedin",
+            "value": "@olehpipko",
+            "href": "https://www.linkedin.com/in/olehpipko/",
+            "target": "_blank"
+        },
+        {
+            "title": "Telegram",
+            "name": "telegram",
+            "value": "@olehpipko",
+            "href": "https://t.me/olehpipko",
+            "target": "_blank"
+        }
+    ],
+    "copyright": {
+        "value": "olehpipko",
+        "year": 2025
+    }
+}
