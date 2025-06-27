@@ -1,0 +1,10 @@
+.page {
+    &--is-resizing {
+        *,
+        *::before,
+        *::after {
+            animation: none !important;
+            transition: all 0s !important;
+        }
+    }
+}

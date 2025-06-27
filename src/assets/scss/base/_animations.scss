@@ -1,0 +1,26 @@
+@keyframes photo-back-blur {
+    0% {
+        transform: translate(-45%, -55%) skew(10deg);
+    }
+    25% {
+        transform: translate(-45%, -45%) skew(-20deg);
+    }
+    50% {
+        transform: translate(-55%, -45%) skew(-10deg);
+    }
+    75% {
+        transform: translate(-55%, -55%) skew(20deg);
+    }
+    100% {
+        transform: translate(-45%, -55%) skew(10deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(720deg);
+    }
+}

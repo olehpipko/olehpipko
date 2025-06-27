@@ -1,0 +1,75 @@
+@use '../abstract/variables' as *;
+
+%link {
+    @media (min-width: $desktop) {
+        display: inline-block;
+
+        position: relative;
+
+        text-decoration: none;
+
+        transition: all 0.1s;
+
+        &:hover {
+            transition: all 0.3s;
+
+            &::before {
+                width: 100%;
+
+                transition: all 0.3s;
+            }
+        }
+
+        &::before {
+            content: '';
+
+            width: 0%;
+            height: 0.0625em;
+
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            transition: all 0.1s;
+        }
+    }
+}
+
+%link--light {
+    @extend %link;
+
+    color: $light;
+
+    @media (min-width: $desktop) {
+        &:hover {
+            color: color-mix(in srgb, $light, $blue 15%);
+            &::before {
+                background-color: color-mix(in srgb, $light, $blue 15%);
+            }
+        }
+    }
+
+    &::before {
+        background-color: $light;
+    }
+}
+
+%link--blue {
+    @extend %link;
+
+    color: $blue;
+
+    @media (min-width: $desktop) {
+        &:hover {
+            color: color-mix(in srgb, $blue, $dark 15%);
+            &::before {
+                background-color: color-mix(in srgb, $blue, $dark 15%);
+            }
+        }
+    }
+
+    &::before {
+        background-color: $blue;
+    }
+}

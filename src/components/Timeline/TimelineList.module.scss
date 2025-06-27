@@ -1,0 +1,26 @@
+@use '@/assets/scss/abstract/variables' as *;
+
+.timeline-list {
+    margin: 1rem 0 0;
+    padding: 0;
+
+    font-size: 0.875rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    list-style-type: none;
+
+    &--light-theme {
+        color: $light;
+    }
+
+    &--dark-theme {
+        color: $dark;
+    }
+
+    @media (min-width: $tablet) {
+        margin: 1.25rem 0;
+    }
+}

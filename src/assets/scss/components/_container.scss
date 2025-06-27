@@ -1,0 +1,16 @@
+@use '../abstract/variables' as *;
+
+%container {
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+    max-width: $container-max-width / 2;
+
+    &--widget {
+        @extend %container;
+
+        @media (min-width: $tablet) {
+            max-width: $container-max-width;
+        }
+    }
+}

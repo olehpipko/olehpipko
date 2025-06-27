@@ -1,0 +1,37 @@
+@use '@/assets/scss/abstract/variables' as *;
+
+@use '@/assets/scss/components/container' as *;
+@use '@/assets/scss/components/title' as *;
+@use '@/assets/scss/components/button' as *;
+
+.about-me {
+    padding: 2rem 0;
+
+    text-align: justify;
+
+    opacity: 0;
+    transform: translateY(3rem);
+
+    transition: all 1s;
+
+    &--is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    @media (min-width: $tablet) {
+        padding: 4rem 0;
+    }
+}
+
+.container {
+    @extend %container;
+}
+
+.title {
+    @extend %title;
+}
+
+.button {
+    @extend %button;
+}

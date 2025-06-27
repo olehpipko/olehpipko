@@ -1,0 +1,26 @@
+//
+// Color-palette
+//
+$blue: #3d7bff;
+$yellow: #ffff3d;
+$dark: #000;
+$light: #fff;
+
+//
+// Breakpoints
+//
+$mobile: 0rem;
+$tablet: 48rem;
+$desktop: 62rem;
+
+//
+//  Container
+//
+$container-max-width: 75rem;
+
+//
+//  Header sizes
+//
+$header-height: 2.5rem;
+$header-vertical-margins: 2rem;
+$header-size: $header-height + ($header-vertical-margins * 2);

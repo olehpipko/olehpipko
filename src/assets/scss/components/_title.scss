@@ -1,0 +1,15 @@
+@use '../abstract/variables' as *;
+
+%title {
+    margin: 0;
+
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1em;
+
+    text-transform: uppercase;
+
+    @media (min-width: $tablet) {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,94 @@
+@use '@/assets/scss/abstract/variables' as *;
+@use '@/assets/scss/base/animations' as *;
+@use '@/assets/scss/components/container' as *;
+
+.hero {
+    height: calc(100vh - $header-size);
+    min-height: fit-content;
+    max-height: 60rem;
+    padding-bottom: $header-size;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    overflow-x: hidden;
+
+    @media (min-width: $tablet) {
+        max-height: 90rem;
+    }
+}
+
+.container {
+    @extend %container;
+}
+
+.picture {
+    margin: auto;
+    max-height: 55vh;
+
+    position: relative;
+
+    aspect-ratio: 1 / 1;
+
+    display: block;
+
+    &::before,
+    &::after {
+        content: '';
+
+        width: 105%;
+        height: 105%;
+
+        border-radius: 50%;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+
+        opacity: 0.15;
+
+        filter: blur(1rem);
+
+        animation: photo-back-blur 20s infinite;
+    }
+
+    &::before {
+        background-color: $yellow;
+
+        transform: translate(-45%, -55%);
+    }
+
+    &::after {
+        background-color: $blue;
+
+        transform: translate(-55%, -45%);
+
+        animation-direction: reverse;
+    }
+}
+
+.photo {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 0.875rem;
+    font-weight: normal;
+}
+
+.fullname {
+    display: block;
+
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1em;
+
+    text-transform: uppercase;
+}
